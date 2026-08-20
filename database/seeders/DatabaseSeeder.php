@@ -116,7 +116,7 @@ class DatabaseSeeder extends Seeder
             'tiktok' => '@nomnomora.id',
             'address' => 'Jl. Kuliner Kekinian No. 45, Kebayoran Baru, Jakarta Selatan, 12130',
             'opening_hours' => 'Senin - Minggu: 10:00 - 21:00 WIB',
-            'google_maps_embed' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2736173007323!2d106.8009228!3d-6.2276332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14e3dbf27ef%3A0x6d900693a103c153!2sBlok%20M%20Square!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid',
+            'google_maps_embed' => 'https://www.google.com/maps?q=-3.7552414,114.7643835&z=17&output=embed',
             'footer_text' => '© 2026 NomNomora. All Rights Reserved.',
         ];
 

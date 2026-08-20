@@ -109,7 +109,7 @@
                     <div class="w-full h-full flex flex-col items-center justify-center text-center p-8 gap-4 text-gray-400 bg-gray-50">
                         <i data-lucide="map-pin" class="w-16 h-16 text-brand-beige animate-bounce"></i>
                         <span class="text-sm font-semibold">Tautan Peta Tersedia</span>
-                        <a href="https://maps.google.com" target="_blank" class="bg-brand-brown hover:bg-brand-accent text-white px-6 py-3 rounded-full text-xs font-bold shadow-md transition-colors">
+                        <a href="https://maps.app.goo.gl/z4FxRxsJTHPhGAmr7" target="_blank" class="bg-brand-brown hover:bg-brand-accent text-white px-6 py-3 rounded-full text-xs font-bold shadow-md transition-colors">
                             Lihat di Google Maps
                         </a>
                     </div>

@@ -15,37 +15,6 @@
     </div>
 </section>
 
-<!-- Filter & Search Section -->
-<section class="py-6 bg-white border-y border-brand-beige/25">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <!-- Category Filter Pills -->
-        <div class="flex flex-wrap items-center gap-2.5 w-full md:w-auto">
-            <a href="{{ route('menu.index', ['search' => request('search')]) }}" 
-               class="px-5 py-2.5 rounded-full text-xs font-bold transition-all border {{ !request('category') ? 'bg-brand-brown border-brand-brown text-white shadow-md' : 'bg-brand-cream/50 border-brand-beige/30 text-brand-brown hover:bg-white' }}">
-                Semua Menu
-            </a>
-            @foreach($categories as $cat)
-                <a href="{{ route('menu.index', ['category' => $cat->slug, 'search' => request('search')]) }}" 
-                   class="px-5 py-2.5 rounded-full text-xs font-bold transition-all border {{ request('category') == $cat->slug ? 'bg-brand-brown border-brand-brown text-white shadow-md' : 'bg-brand-cream/50 border-brand-beige/30 text-brand-brown hover:bg-white' }}">
-                    {{ $cat->name }}
-                </a>
-            @endforeach
-        </div>
-
-        <!-- Search Bar Form -->
-        <form action="{{ route('menu.index') }}" method="GET" class="w-full md:w-80 flex items-center relative">
-            @if(request('category'))
-                <input type="hidden" name="category" value="{{ request('category') }}">
-            @endif
-            <input type="text" name="search" value="{{ request('search') }}" placeholder="Cari camilan favoritmu..."
-                   class="border border-brand-beige rounded-full px-5 py-3 pr-12 text-xs w-full focus:outline-none focus:ring-2 focus:ring-brand-accent/25 focus:border-brand-accent transition-all">
-            <button type="submit" class="absolute right-4 text-brand-brown hover:text-brand-accent cursor-pointer">
-                <i data-lucide="search" class="w-4 h-4"></i>
-            </button>
-        </form>
-    </div>
-</section>
-
 <!-- Menu Products Catalog Grid -->
 <section class="py-16 bg-brand-cream/15 min-h-[50vh]">
     <div class="max-w-7xl mx-auto px-6 flex flex-col gap-12">

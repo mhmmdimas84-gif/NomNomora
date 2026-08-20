@@ -24,7 +24,7 @@ class ContactController extends Controller
 
         // Clean whatsapp link for chat button
         $cleanWhatsapp = preg_replace('/[^0-9]/', '', $settings['whatsapp_number']);
-        $whatsappUrl = "https://wa.me/" . $cleanWhatsapp . "?text=" . urlencode("Halo NomNomora 👋\n\nSaya ingin bertanya mengenai menu camilan yang tersedia.");
+        $whatsappUrl = "https://wa.me/" . $cleanWhatsapp . "?text=" . urlencode("Halo NomNomora\n\nSaya ingin memesan menu lezat yang tersedia di NomNomora.");
 
         return view('contact', compact('settings', 'whatsappUrl'));
     }

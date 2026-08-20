@@ -56,7 +56,7 @@
             <div class="hidden md:block">
                 @php
                     $cleanWhatsapp = preg_replace('/[^0-9]/', '', $globalSettings['whatsapp_number'] ?? '6281234567890');
-                    $directWaUrl = "https://wa.me/" . $cleanWhatsapp . "?text=" . urlencode("Halo NomNomora 👋\n\nSaya ingin memesan menu lezat NomNomora.");
+                    $directWaUrl = "https://wa.me/" . $cleanWhatsapp . "?text=" . urlencode("Halo NomNomora\n\nSaya ingin memesan menu lezat yang tersedia di NomNomora.");
                 @endphp
                 <a href="{{ $directWaUrl }}" target="_blank" 
                    class="bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-2">

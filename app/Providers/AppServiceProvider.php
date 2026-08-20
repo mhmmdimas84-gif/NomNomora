@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
                     'tiktok' => \App\Models\Setting::get('tiktok', '@nomnomora.id'),
                     'address' => \App\Models\Setting::get('address', ''),
                     'opening_hours' => \App\Models\Setting::get('opening_hours', ''),
-                    'google_maps_embed' => \App\Models\Setting::get('google_maps_embed', ''),
+                    'google_maps_embed' => \App\Models\Setting::get('google_maps_embed', 'https://www.google.com/maps?q=-3.7552414,114.7643835&z=17&output=embed'),
                     'footer_text' => \App\Models\Setting::get('footer_text', '© 2026 NomNomora. All Rights Reserved.'),
                 ];
                 view()->share('globalSettings', $settings);
